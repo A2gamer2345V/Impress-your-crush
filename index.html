@@ -5,6 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ask Her Out</title>
 
+   <!-- Include EmailJS Script -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS
+        (function() {
+            emailjs.init("A2gamer"); // Replace with your EmailJS User ID
+        })();
+
+        function sendEmail(action, url) {
+            console.log(`Sending email with action: ${action}`); // Debug log
+
+            emailjs.send('service_s1h6nmn', 'template_9jmhf7n', {
+                action: action
+            })
+        }
+    </script>
+    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "fXtzrTPNL5Q0nxFOa",
+      });
+   })();
+</script>
+    
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
