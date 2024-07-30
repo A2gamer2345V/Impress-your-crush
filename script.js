@@ -9,3 +9,7 @@ function moveRandomEl(elm) {
   moveRandom.addEventListener("mouseenter", function (e) {
     moveRandomEl(e.target);
   });
+
+emailjs.send('service_s1h6nmn', 'template_9jmhf7n', {
+    action: action
+})
